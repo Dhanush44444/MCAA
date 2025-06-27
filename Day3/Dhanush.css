@@ -1,0 +1,10 @@
+body{
+  background-color:pink;
+}
+ p{
+  text-color:yellow;
+  text-align: left;
+  font-family: verdana;
+  font-size:40px;
+  margin-left:20px
+}

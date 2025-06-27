@@ -1,0 +1,10 @@
+body{
+  background-color:gray;
+}
+ p,h1{
+  color:yellow;
+  text-align: left;
+  font-family: verdana;
+  font-size:40px;
+  margin-left:20px
+}
