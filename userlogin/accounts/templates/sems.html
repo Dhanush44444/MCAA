@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My Header{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+   
+</head>
+<body style="background-image: url('{% static 'img/college.png' %}'); background-size: cover; background-repeat: no-repeat;">
+<header>
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+        <img src="{% static 'img/logo.png' %}" alt="MTICA College Logo" style="height: 100px;">
+
+        <div style="text-align: center; flex-grow: 1;">
+            <h1 style="font-size: 28px; font-weight: bold; color:red; margin: 0;">Mother Theresa Institution of Engineering and Technologies</h1>
+            <h3 style="font-size: 15px; font-weight: bold; margin: 0;">Meluoi, Palamaner-517408</h3>
+        </div>
+
+        <a href="{% url 'logout' %}" style="padding: 10px 15px; background-color: red; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">Logout</a>
+    </div>
+
+
+
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">MASTER</button>
+            <div class="dropdown-content">
+                <a href="{% url 'mca101' %}">1</a>
+                <a href="{% url 'mca102' %}">2</a>
+                <a href="{% url 'mca103' %}">3</a>
+                <a href="{% url 'mca104' %}">4</a>
+                <a href="{% url 'mca105' %}">5</a>
+                <a href="{% url 'mca106' %}">6</a>
+                <a href="{% url 'mca107' %}">7</a>
+                <a href="{% url 'mca108' %}">8</a>
+               <a href="{% url 'mca101' %}">9</a>
+               <a href="{% url 'mca101' %}">10</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">TRANSACTIONS</button>
+            <div class="dropdown-content">
+                <a href="{% url 'mca201' %}">MCA-201</a>
+                <a href="{% url 'mca202' %}">MCA-202</a>
+                <a href="{% url 'mca203' %}">MCA-203</a>
+                <a href="{% url 'mca204' %}">MCA-204</a>
+                <a href="{% url 'mca205' %}">MCA-205</a>
+                <a href="{% url 'mca206' %}">MCA-206</a>
+                <a href="{% url 'mca207' %}">MCA-207</a>
+                <a href="{% url 'mca208' %}">MCA-208</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">REPORT</button>
+            <div class="dropdown-content">
+                <a href="{% url 'mca301' %}">MCA-301</a>
+                <a href="{% url 'mca302' %}">MCA-302</a>
+                <a href="{% url 'mca303' %}">MCA-303</a>
+                <a href="{% url 'mca304' %}">MCA-304</a>
+                <a href="{% url 'mca305' %}">MCA-305</a>
+                <a href="{% url 'mca306' %}">MCA-306</a>
+                <a href="{% url 'mca307' %}">MCA-307</a>
+                <a href="{% url 'mca308' %}">MCA-308</a>
+                <a href="{% url 'mca309' %}">MCA-309</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">RESTORT & BACKUP</button>
+            <div class="dropdown-content">
+                <a href="{% url 'mca401' %}">MCA-401</a>
+                <a href="{% url 'mca402' %}">MCA-402</a>
+                <a href="{% url 'mca403' %}">MCA-403</a>
+            </div>
+        </div>
+ <div class="dropdown">
+           
+            <a href="{% url 'sems' %}">
+EXIT</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    {% block content %}
+
+{% endblock %}
+
+</main>
+
+
+
+</body>
+</html>
